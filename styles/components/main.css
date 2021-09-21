@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main {
+    background-image: url('../../images/main-bg.jpeg');
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+}
+
+header {
+    border-bottom: 1px solid rgb(192, 192, 192);
+}
+
+.header__inner {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__inner > input {
+    outline: none;
+    background: none;
+    border: 1px solid rgb(192, 192, 192);
+    padding: 5px;
+    font-size: 15px;
+}
+
+.header__inner > input::placeholder {
+    color: #fff;
+}
+
+.header__inner > i {
+    color: #fff;
+    font-size: 25px;
+}
+
+.menu {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main__content {
+    position: relative;
+    height: calc(100% - 150px);
+}
+
+.main-inner {
+    width: 40%;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    text-align: center;
+}
+.main-inner > p {
+    padding: 20px;
+}
+
+.main-inner > a {
+    padding: 10px;
+    border: 2px solid #000;
+    text-decoration: none;
+    color: #000;
+}
+
+.main-inner > a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+@media (max-width: 850px) {
+    .container {
+        width: 90%;
+    }
+    .menu {
+        width: 50%;
+    }
+}
+
+@media (max-width: 650px) {
+    .menu {
+        display: none;
+    }
+}
+
+
+@media (max-width: 426px){
+    .main-inner {
+        width: 90%;
+    }
+}

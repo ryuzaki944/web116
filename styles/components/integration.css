@@ -1,0 +1,23 @@
+.integration {
+    background-image: linear-gradient(#e66465, #9198e5);
+    padding: 50px 0;
+}
+
+.integration-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.integration-inner > div {
+    width: 45%;
+}
+
+
+@media (max-width: 650px) {
+    .integration-inner > div {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+}
